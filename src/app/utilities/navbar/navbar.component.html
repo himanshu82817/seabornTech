@@ -1,0 +1,91 @@
+<header>
+  <nav id="nav" >
+    <div class="main">
+      <img (click)="offToggle()" [routerLink]="['']" src="/assets/images/logo final-01-01(1).png" alt="">
+    <div class="right">
+      <div [routerLink]="['/services']" class="services">
+        <h6>IT-Services</h6>
+        <div class="dropdown">
+          <p>Data Analysis</p>
+          <p>Machine Learning</p>
+          <p>Software</p>
+          <p>IOT</p>
+          <p>Artificial Intelligence</p>
+          <p>RPA</p>
+          <p>Digital Marketing</p>
+          <p>Devops</p>
+          <p>Graphics Design</p>
+        </div>
+      </div>
+      <div [routerLink]="['industries']" class="industries">
+        <h6>Industries</h6>
+        <div class="dropdown">
+          <p>Banking & Finance</p>
+          <p>Reatil & Ecommerce</p>
+          <p>Travel & Tourism</p>
+          <p>Education & Learning</p>
+          <p>Healthcare</p>
+          <p>Logistics & Transportation</p>
+          <p>Media & Entertainment</p>
+          <p>Automotive</p>
+        </div>
+      </div>
+      <div class="training">
+        <h6 [routerLink]="['training']">Training</h6>
+        <div class="dropdown">
+          <p routerLink="python">Python</p>
+          <p routerLink="pythonWithDJango">Python with Django</p>
+          <p routerLink="dataScience">Data Science</p>
+          <p routerLink="machineLearning">Machine Learning</p>
+          <p routerLink="ai">Artificial Intelligence</p>
+          <p routerLink="devops">Devops</p>
+          <p routerLink="powerBI">Power Bi</p>
+          <p routerLink="powerBI">Data Analytics</p>
+          <p routerLink="powerBI">Neural Networks</p>
+          <p routerLink="powerBI">Tensorflow</p>
+          <p routerLink="powerBI">Deep Learning</p>
+        </div>
+      </div>
+      <div class="testimonials" [routerLink]="['testimonials']">
+        <h6>Testimonials</h6>
+      </div>
+      <div [routerLink]="['certification']" class="certification">
+        <h6  >Certification</h6>
+      </div>
+
+
+      <div class="about">
+        <h6 [routerLink]="['about']" >About Us</h6>
+      </div>
+      <div class="company" >
+        <h6 >Company</h6>
+        <div class="dropdown">
+          <p routerLink="blogs">Blog</p>
+          <p routerLink="projects">Our Projects</p>
+          <p routerLink="contact">Contact Us</p>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="menu">
+      <i class="fas fa-bars"  (click)="showMenu()" ></i>
+    </div>
+    </div>
+  <div class="down">
+      <div id="dropdownMenu">
+          <p (click)="offToggle()" [routerLink]="['/services']" >Services</p>
+          <p (click)="offToggle()" [routerLink]="['industries']" >Industries</p>
+          <p (click)="offToggle()" [routerLink]="['training']" >Training</p>
+          <p (click)="offToggle()" [routerLink]="['testimonials']" >Testimonials</p>
+          <p (click)="offToggle()" [routerLink]="['certification']" >Certification</p>
+          <p (click)="offToggle()" [routerLink]="['about']" >About</p>
+          <p (click)="offToggle()" [routerLink]="['blogs']" >Blogs</p>
+          <p (click)="offToggle()" [routerLink]="['projects']" >Projects</p>
+          <p (click)="offToggle()" [routerLink]="['contact']" >Contact Us</p>
+    </div>
+    </div>
+    
+  </nav>
+ 
+</header> 

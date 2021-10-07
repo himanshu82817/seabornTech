@@ -1,0 +1,72 @@
+.landing{width: 100%;margin: 0;padding: 70px 0 0 0 ;background: linear-gradient(to top, rgba(136, 1, 91, 0.548), rgba(64, 2, 114, 0.514));
+
+display: flex;align-items: center;justify-content: center;
+padding-bottom: 150px;
+
+
+}
+
+.glass{position: relative; height: 550px; width: 90%; display: flex;justify-content: space-between; padding: 0 2% ;background: rgba(255, 255,255,0.5);box-shadow: 0 15px 30px rgba(255,255,255,0.3);border-radius: 20px;
+    
+
+     border: 1px solid rgba(255,255,255,0.25);
+     border-top: 1px solid rgba(255,255,255,0.5);
+     border-left: 1px solid rgba(255,255,255,0.5);
+
+    margin-bottom: 30px; 
+
+}
+
+
+
+
+.glass .left{height: 500px; width: 50%;display: flex;flex-direction: column;margin-top: 90px;padding: 0px 0px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);border-radius: 20px;
+    
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+
+justify-content:center;align-items: center;overflow-y:auto;
+
+
+
+}
+
+
+
+.glass .left h1{color:rgb(32, 8, 32);font-size:30px;margin:0 0 10px 0;font-weight: 590;}
+.glass .left p{color:#B92671;font-size:17px;margin:0 0 10px 0;width: 80%;}
+
+
+.glass .right{ height: 100%; width: 50%;display: flex;align-items: center;justify-content:center;padding:100px 10px 10px 10px;flex-direction: column;}
+.glass .right p{color: #B92671;font-size: 25px;width: 90%;text-align: center;}
+.glass .right img{width: 65%;opacity: .9;}
+
+form{display: flex;flex-direction: column;align-items: center;justify-content: space-around;height: 100%;width: 70%;}
+.purposeRadio{width: 20px;height: 20px;margin: 0px 10px 0 30px;}
+#purpose{display: flex;justify-content: flex-start;align-items: flex-start;}
+#purpose i{margin-right: 10px;}
+#subPurpose{height: 90px;display: flex;align-items: flex-end;}
+#select{display: flex;flex-direction: column;height: 90px;width:auto;overflow-y: auto;padding: 0 20px;}
+#select div{display: flex;justify-content: space-between;width:200px;}
+#select div input{height: 14px;width: 14px;}
+
+form div{display: flex;width: 100%;align-items:flex-end;justify-content: space-between;}
+form i{font-size: 20px; color: #B92671;}
+.details{border: none;width:90%;height: 30px;border-bottom: 1px solid #B92671;background: none;}
+form div input, select:focus{outline: none;}
+#msg{border: none;height: 50px;border-bottom: solid 1px #B92671;border-radius: 0;width: 100%;background: none;}
+#msg:focus{outline: none;}
+form button{border: none;border-radius: 5px;padding: 6px;width: 90px;background-color: #B92671;color: white;}
+
+@media (max-width: 960px){
+    .landing{padding: 50px 0 0 0;}
+   .glass{flex-direction: column;height: auto;}
+   .glass .right{width: 100%;}
+   .glass .left{width: 100%;height:70vh;margin: 0;padding: 0;background: none;border: none;backdrop-filter: 0;box-shadow: none;}
+   .glass .left form{width: 100%;}
+   .purposeRadio{margin:0 5px 0 20px;}
+}

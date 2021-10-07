@@ -1,0 +1,36 @@
+main{overflow: hidden;box-sizing: border-box;width: 100%;background: linear-gradient(to top, rgba(136, 1, 91, 0.548), rgba(64, 2, 114, 0.514));}
+.circle{position: absolute;border: 20px solid white;border-radius: 50%;}
+.c1{height: 300px;width: 300px;transform: translate(-100px,-100px);}
+.c2{height: 400px;width: 400px;top: 55vh;right: 0;transform: translateX(200px);display: none;}
+
+.main{display: flex;align-items: center;justify-content: center;}
+.landing{position: relative;  width: 90%;padding: 0 3% ;background: rgba(255, 255, 255, 0.651);box-shadow: 0 15px 30px rgba(255,255,255,0.3);border-radius: 20px;
+    
+
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+
+
+    margin: 70px 0;padding: 4%;
+
+    
+
+}
+.landing h1{color: rgb(40, 0, 48);}
+.landing h2{color: rgb(125, 6, 141);}
+.cardHolder{ display: flex;align-items: center;justify-content: center;flex-wrap: wrap;}
+.card{width: 25%; padding: 0; overflow: hidden; background-color:rgba(255, 255, 255, 0.521); display: flex;align-items: center;justify-content: space-between;margin: 30px;border-radius: 5px;position: relative;}
+.card i{position: absolute;font-size: 150px;color: rgba(204, 204, 204, 0.24);left: 15px;top: 15px; z-index: 1;}
+.card p{width:100%;padding: 20px;text-align: center;}
+.card h6{margin: 20px 0;}
+.card img{width:100%;}
+.card h5{width:100%;text-align: end;font-size: 15px;color: #b92671;padding-right: 10px;}
+
+
+@media (max-width: 960px){
+    .card{width: 100%;padding:0 ;margin: 20px 0;}
+    .card p{width: 80%;padding: 0;}
+   
+    .landing{margin: 50px 0;padding: 35px;}
+}

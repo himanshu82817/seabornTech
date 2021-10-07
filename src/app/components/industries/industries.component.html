@@ -1,0 +1,32 @@
+<main>
+
+
+
+  <div class="landingContainer">
+    
+    <div class="landing">
+      <img src="/assets/images/07.-Cloud-Services.svg" alt="">
+      <div class="content">
+        <h1>Seaborn Technologies</h1>
+        <p>A one stop solution for all your IT and Software business related problems</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="industries">
+    <div class="cards" *ngFor="let item of headings" [class]="item.flipped ? 'flipped' : 'non-flipped'">
+      <div class="heading">
+        <h1>{{item.heading}}</h1>
+        <p>{{item.content}} </p>
+      </div>
+      <div class="img">
+        
+        <img [src]="item.img">
+      </div>
+      
+    </div>
+
+
+  </div>
+
+</main>

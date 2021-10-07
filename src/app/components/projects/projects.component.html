@@ -1,0 +1,22 @@
+<main>
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="backg bg1"></div>
+    <div class="backg bg2"></div>
+    <div class="main">
+        <div class="landing">
+            <h1>Have a look</h1>
+            <h2>on our work</h2>
+            <div class="cardHolder">
+                <div class="card" *ngFor="let item of data" >
+                    <img [src]="item.img" alt="profile"/>
+                    <h6>{{item.name}}</h6>
+                    <p>{{item.comment}}</p>
+                    <h5>view more</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+

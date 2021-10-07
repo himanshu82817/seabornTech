@@ -1,0 +1,42 @@
+<main>
+
+  <div class="landing">
+    <div class="glass">
+      <div class="right">
+        <img src="/assets/images/undraw_businessman_97x4.svg" alt="">
+      </div>
+
+
+      <div class="left">
+        <h1>About Seaborn Technologies</h1>
+        <p>Seaborn technologies has developed expertise in fields of machine learning,data science,web development
+          ,IOT,blockchain,android development. We are a team of dedicated and motivated professionals to help
+          deliver customized standard solutions that add value to your business. We stick with advanced
+          technologies to compete in the global market.</p>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="mission">
+
+    <div class="content">
+      <h3>Our Mission</h3>
+      <p>Started with the initiative to revolutionize the methodologies in the current IT and software sectors to
+        benefit the customers,shareholders and employees..We are focused to deliver products that are innovative
+        ,interactive and flexible.</p>
+      <h3>Our Vision</h3>
+      <p>To help businesses and industries thrive in the cut-throat competition by using latest technologies.</p>
+    </div>
+    <img src="/assets/images/undraw_Goals_re_lu76.svg" alt="">
+  </div>
+
+  <h1 class="mainHeadings">Values We Swear By</h1>
+  <div class="cardHolder">
+    <div class="card" *ngFor='let item of data'>
+      <i class={{item.img}}></i>
+      <h2>{{item.heading}}</h2>
+      <p>{{item.content}}</p>
+    </div>
+  </div>
+</main>

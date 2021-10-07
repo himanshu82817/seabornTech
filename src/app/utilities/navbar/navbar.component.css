@@ -1,0 +1,40 @@
+header{width: 86%;position: fixed;right: 7%;z-index: 50;transition: .4s;top: 3%;}
+nav{background: rgba(255, 255,255,0.2);box-shadow: 0 15px 30px rgba(160,160,160,0.16);border-radius: 20px;backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+     border-top: 1px solid rgba(255,255,255,0.5);
+     border-left: 1px solid rgba(255,255,255,0.5);
+     
+    
+    }
+    .main{ width: 100%;display:flex;align-items: center;justify-content: space-between;padding:0 4%;box-sizing: border-box;}
+nav .menu{display: none;}
+nav .right{display: flex;align-items: center;justify-content: space-between;width: 70%;height: 100%;}
+nav .right h6{color: #7A3372;font-family: 'Varela Round', sans-serif;cursor: pointer;font-size: 15px;}
+.dropdown{width: 0; transition: .4s; height: 0;overflow:hidden; transform: translateY(-0px); position: absolute;background: rgba(253, 236, 255, 0.973);box-shadow: 0 15px 35px rgba(160, 160, 160, 0.5);border-radius: 5px;backdrop-filter: blur(10px);
+}
+.dropdown p{color: #7A3372;font-size: 12px;margin: 10px;cursor: pointer;}
+#dropdownMenu{display: none;}
+/* .services{position: relative;display: inline-block;} */
+.services:hover .dropdown{height:258px;width: auto;}
+.industries:hover .dropdown{height: 232px;width: auto;}
+.company:hover .dropdown{height:94px;width: auto;}
+.training:hover .dropdown{height:318px;width: auto;}
+
+
+nav img{width: 170px;cursor: pointer;}
+.sticky{ top: 0;  width: 100%;right: 0; z-index: 50; background: rgba(255, 255, 255, 0.37);box-shadow: 0 8px 16px rgba(187, 183, 183, 0.19);backdrop-filter: blur(40px);}
+.sticky nav{border-radius: 0px;}
+.sticky .right h6{color: #7A3372;}
+
+
+
+@media (max-width: 960px){
+nav{width: auto;backdrop-filter: blur(40px);}
+nav img{width: 100px;}
+nav .right{display: none;}
+#dropdownMenu{display:flex;flex-direction: column;align-items:center;height: 0;overflow: hidden;transition: .4s;}
+
+nav .menu{display: block;color:#7A3372 ;font-size: 25px;}
+.menu i:hover #dropdownMenu{height: 360px;}
+
+}

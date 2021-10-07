@@ -1,0 +1,17 @@
+<main>
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    
+    <div class="main">
+        <div class="landing">
+            <h1>Take a look on</h1>
+            <h2>Certificates</h2>
+            <div class="cardHolder">
+                <div class="card" *ngFor="let item of data" >
+                    <img [src]="item.img" alt="certificate"/>
+                    <div class="cbg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,48 @@
+<main>
+    <div class="b1 d"></div>
+    <div class="b2 u"></div>
+    <div class="b3 d"></div>
+    <div class="b4 u"></div>
+    <div class="b5 d"></div>
+    <div class="b6 u"></div>
+    <div class="b7 d"></div>
+    <div class="b8 u"></div>
+    
+    <div class="landing">
+        <div class="heading">
+            <h1>Learn the most in-demand skills & get certified</h1>
+            <p>We as an institute believing working on those dreams not by sleeping but making those dreams a
+                reality, we believe in baby steps.</p>
+        </div>
+        <img src="/assets/images/training/undraw_Online_learning_re_qw08.svg" alt="">
+    </div>
+
+    <div class="about">
+        <img class="teacher" src="/assets/images/training/undraw_teaching_f1cm.svg" alt="">
+        <div class="content">
+            <p class="first" >Among the courses that are available in the market Either are expensive or lack good material with
+                lacking securities regarding job and company exposure, we here welcome all the students who are
+                willing to give the time and effort so as to full fill their dreams.</p>
+                
+                    <p class="second" >One step at a time we understand that learning pace of every individual is different and we tends to
+                take care of that by having one to one mentor session. So, one can feel comfortable and confident
+                enough to overcome the barrier which is existing between student and a teacher.</p>
+                
+                
+            
+                
+        </div>
+        
+    </div>
+    
+    <h1 class="mainHeadings" >Our Courses</h1>
+    <div class="courses">
+            <div class="cardHolder" *ngFor="let item of data">
+                <div  class="course">
+                    <img [src]="item.img" alt="">
+                    <h5>{{item.title}}</h5>
+                    <h6 [routerLink]="[item.link]">View more</h6>
+                </div>
+            </div>
+    </div>
+</main>

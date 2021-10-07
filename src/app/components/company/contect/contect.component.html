@@ -1,0 +1,155 @@
+<main>
+    <div class="landing">
+        <div class="glass">
+          <div class="right">
+              <p>Request a free consultation and get a no obligation quote for your project within 8 business hours</p>
+              <h1>Connect us</h1>
+            <img src="/assets/images/undraw_contact_us_15o2.svg" alt="">
+          </div>
+    
+    
+          <div class="left">
+            <form action="">
+                <div>
+                    <label for="name"><i class="fas fa-user"></i></label>
+                    <input class="details" type="text" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label for=""><i class="fas fa-envelope"></i></label>
+                    <input class="details" type="text" placeholder="Enter email">
+                </div>
+                <div>
+                    <label for=""><i class="fas fa-phone"></i></label>
+                    <input class="details" type="text" placeholder="Enter mobile no.">
+                </div>
+                <div id="purpose">
+                  <i class="fas fa-hand-point-up"></i>
+                  <input class="purposeRadio" type="radio" checked (change)="getValue($event.target)"  value="training" name="purpose" />
+                  <label for="">Training</label>
+                    <input class="purposeRadio" type="radio" (change)="getValue($event.target)"  value="development"  name="purpose" />
+                    <label for="">Development</label>
+                    <input class="purposeRadio" type="radio" name="purpose" (change)="getValue($event.target)" value='other' id="">
+                    <label for="">Other</label>
+                </div>
+                <div id="subPurpose">
+                  <div id="select" *ngIf="purposeValue == 'training'">
+                    <div class="">
+                      <label for="">Python</label>
+                      <input type="checkbox" name="" id="">
+                      </div>
+                      <div class="">
+                      <label for="">Python with django</label>
+                      <input type="checkbox" name="" id="">
+                      </div>
+                      <div class="">
+                      <label for="">Data Science</label>
+                      <input type="checkbox" name="" id="">
+                      </div>
+                      <div class="">
+                      <label for="">Machine Learning</label>
+                      <input type="checkbox" name="" id="">
+                      </div>
+                      <div class="">
+                      <label for="">Artificial Intelligence</label>
+                      <input type="checkbox" name="" id="">
+                      </div>
+                      <div class="">
+                      <label for="">Devops</label>
+                      <input type="checkbox" name="" id="">
+                      </div>
+                      <div class="">
+                      <label for="">Power Bi</label>
+                      <input type="checkbox" name="" id="">
+                      </div>
+                      <div class="">
+                      <label for="">Data Analytics</label>
+                      <input type="checkbox" name="" id="">
+                      </div>
+                      <div class="">
+                      <label for="">Neural Networks</label>
+                      <input type="checkbox" name="" id="">
+                      </div>
+                      <div class="">
+                      <label for="">Tensorflow</label>
+                      <input type="checkbox" name="" id="">
+                      </div>
+                      <div class="">
+                      <label for="">Deep Learning</label>
+                      <input type="checkbox" name="" id="">
+                      </div>
+                      <div class="">
+                      <label for="">Other</label>
+                      <input type="checkbox" name="" id="">
+                      </div>
+
+                  </div>
+                  <div id="select" *ngIf="purposeValue == 'development'" >
+                    <div class="">
+                      <label for="">Data Analysis</label>
+                      <input type="checkbox"/>
+                    </div>
+                    <div class="">
+                      <label for="">Machine Learning</label>
+                      <input type="checkbox"/>
+                    </div>
+                    <div class="">
+                      <label for="">Software</label>
+                      <input type="checkbox"/>
+                    </div>
+                    <div class="">
+                      <label for="">IOT</label>
+                      <input type="checkbox"/>
+                    </div>
+                    <div class="">
+                      <label for="">Artificial Intelligence</label>
+                      <input type="checkbox"/>
+                    </div>
+                    <div class="">
+                      <label for="">RPA</label>
+                      <input type="checkbox"/>
+                    </div>
+                    <div class="">
+                      <label for="">Digital Marketing</label>
+                      <input type="checkbox"/>
+                    </div>
+                    <div class="">
+                      <label for="">Devops</label>
+                      <input type="checkbox"/>
+                    </div>
+                    <div class="">
+                      <label for="">Graphics Design</label>
+                      <input type="checkbox"/>
+                    </div>
+                    <div class="">
+                      <label for="">Other</label>
+                      <input type="checkbox"/>
+                    </div>
+                  </div>
+                  <div id="select" *ngIf="purposeValue == 'other'">
+                    <div class="">
+                      <label for="">Partnership</label>
+                      <input type="checkbox"/>
+                    </div>
+                    <div class="">
+                      <label for="">Business</label>
+                      <input type="checkbox"/>
+                    </div>
+                    <div class="">
+                      <label for="">Certification</label>
+                      <input type="checkbox"/>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                    
+                </div>
+                <input type="text" id="msg" placeholder="Enter your message">
+                <button>Submit</button>
+            </form>
+          </div>
+    
+    
+        </div>
+      </div>
+    
+</main>

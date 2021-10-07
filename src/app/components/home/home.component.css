@@ -1,0 +1,166 @@
+/* main{background-color: #b95ce4b4;} */
+.landing{ height: 120vh;width: 100%;margin: 0;padding: 0;background: linear-gradient(to top, rgba(136, 1, 91, 0.548), rgba(64, 2, 114, 0.514));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+
+
+display: flex;align-items: center;justify-content: center;
+padding-bottom: 150px;
+
+
+}
+
+.glass{position: relative; height: 80%; width: 90%; display: flex;padding: 0 3% ;background: rgba(255, 255,255,0.5);box-shadow: 0 15px 30px rgba(255,255,255,0.3);border-radius: 20px;
+    
+
+     border: 1px solid rgba(255,255,255,0.25);
+     border-top: 1px solid rgba(255,255,255,0.5);
+     border-left: 1px solid rgba(255,255,255,0.5);
+
+     
+
+}
+
+
+
+
+.glass .left{height: 50%; width: 60%;display: flex;flex-direction: column;margin-top: 150px;padding: 40px 20px;
+
+    /* box-shadow: 0 15px 35px rgba(0,0,0,0.1);border-radius: 20px; */
+    
+    /* border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px); */
+
+justify-content: space-around;
+
+
+
+}
+
+
+
+.glass .left h1{color:rgb(32, 8, 32);font-size:30px;margin:0 0 10px 0;font-weight: 590;}
+.glass .left p{color:purple;font-size:17px;margin:0 0 10px 0;width: 80%;}
+
+
+.glass .right{ height: 100%; width: 40%;display: flex;align-items: center;justify-content:center;padding:40px 0 0 0px}
+.glass .right img{width: 80%;animation: animate 5s linear infinite;}
+@keyframes animate{
+    0%,100%
+    {transform: translateY(-10px);}
+    50%{transform: translateY(50px);}
+}
+
+.smlink{position: absolute;bottom: 30%;right: -37px;display: flex;flex-direction: column;align-items: center;}
+.smlink i{font-size: 23px;color: #B92671;margin: 14px;width: 50px;height: 50px;display:flex;align-items: center;justify-content: center;
+    
+     background: rgba(255, 255,255,0.5);box-shadow: 0 15px 30px rgba(255,255,255,0.3);border-radius: 50%;border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5); backdrop-filter: blur(1px);}
+
+.mainHeadings{position: relative;font-size: 35px;display: inline;margin: 900px 4%;}
+.mainHeadings::after{position: absolute; content: "";bottom:-2px;left:0;width:50%;height: 4px;background-color: #B92671;}
+    .agenda{display: flex;padding: 0 4%;}
+    .agenda .left{width: 50%;}
+    .agenda .left img{width: 70%;}
+    .agenda .right{position: relative;z-index: 30; width: 50%;  
+    }
+    .agenda .right div{box-shadow: 0 15px 35px rgba(0,0,0,0.1);border-radius: 2px;
+    
+        border: 1px solid rgba(255,255,255,0.25);
+        border-top: 1px solid rgba(255,255,255,0.5);
+        border-left: 1px solid rgba(255,255,255,0.5);
+        backdrop-filter: blur(4px);display: flex;flex-direction: column;padding: 0 20px;align-items: center;}
+    .block{content: "";position: absolute;width: 50px;height: 100px; z-index:-1;
+    
+    
+        background: linear-gradient(to top, rgba(136, 1, 91, 0.548), rgba(64, 2, 114, 0.514));}
+        .block1{bottom:33%;right:-3%;}
+        .block2{top:30px;left:-3%;}
+
+
+
+
+    .agenda .right h3{line-height: 35px;word-spacing: 5px;margin-bottom: 30px;}
+    .agenda .right p{line-height: 35px;word-spacing: 5px;}
+
+    
+
+
+
+.ourTech{display: flex;margin: 30px 0;}
+
+.ourTech .right{display:flex;flex-wrap: wrap;justify-content: center;align-items: center;}
+.ourTech .right img{height:90px; filter: grayscale(100%);transition: .4s;margin: 30px 50px;}
+.ourTech .right img:hover{filter:none;}
+
+
+.whatWeDo{position: relative; width: 100%;padding: 0 4%;display: flex;flex-direction: column;box-sizing: border-box;}
+.whatWeDo .backGround1{position: absolute;clip-path: polygon(0 70%, 100% 75%, 100% 100%, 0 95%);background: linear-gradient(to top, rgba(136, 1, 91, 0.548), rgba(64, 2, 114, 0.514));
+
+width: 100%;height: 250%;bottom:60px;left: 0;
+
+}
+
+
+.whatWeDo .title{height: 10%;width: 100%;position: relative;}
+
+.whatWeDo .cardHolder{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-around;}
+.cardHolder .cardBox{height: 400px; width: 350px;  display: flex;box-sizing: border-box;justify-content: center;align-items: center;
+    
+    z-index:1;background-color: rgba(255, 255, 255, 0.747);
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.1),
+                inset -5px -5px 5px rgba(255,255,255,0.1),
+                5px 5px 5px rgba(0,0,0,0.1),
+                -5px -5px 5px rgba(255,255,255,0.1);
+            
+    border-radius: 15px;
+    margin: 50px 0;
+    
+
+            }
+    
+
+
+
+.cardHolder .card{transition: .6s; height: 370px;width: 320px; display:flex;box-sizing: border-box;justify-content: center;align-items: center;padding: 0 3%;
+
+    background: #f0f3f5;              
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                  border-radius: 15px;
+
+
+}
+.cardHolder .card:hover{background:linear-gradient(45deg,#b95ce4,#4f29cd); transform:translateY(-30px);box-shadow: 0 10px 40px rgba(0,0,0,0.5);}
+.cardHolder .card:hover h5{color: white;}
+.cardHolder .card:hover p{color: rgb(223, 219, 219);}
+.cardHolder .card img{width:35%;margin-bottom: 30px;}
+.cardHolder .card h5{margin: 9px  0;width: auto;transition: .1s;}
+.card p{color: gray;text-align: center;transition: .6s;}
+/* .cardHolder .card {width:25%;} */
+
+
+
+.ourClints{display: flex;flex-wrap: wrap;width: 100%;justify-content: space-around;padding: 0 4%;}
+.ourClints img{height: 70px;margin: 50px;filter: grayscale(100%);transition: .2s;}
+.ourClints img:hover{filter: none;}
+
+
+
+@media (max-width: 960px){
+    .landing{padding-top: 50px; height: auto;}
+    .glass{flex-direction: column;height: auto;padding: 60px 20px;}
+    .glass .left{width: 100%;height: 50%;justify-content:space-between;align-items: center;margin: 0;box-shadow: none;border: none;}
+    .glass .left p,h1{text-align: center;}
+    .glass .right{width: 100%; }
+    .smlink{bottom:-40px;left: 0; flex-direction: row;width: 100%;justify-content:center;align-items: center;}
+    .smlink i{font-size: 20px;}
+    .mainHeadings{margin: 100px;}
+    .agenda{flex-direction: column;margin: 30px 0;}
+    .agenda .left{height: auto;width: 100%;display: flex;justify-content: center;}
+    .agenda .right{height: auto;width: 100%;}
+    .ourTech{flex-direction: column;}
+    .ourTech .right img{height: 40px;margin: 20px 30px;}
+    .ourClints img{height: 30px;margin: 30px 15px;}
+}

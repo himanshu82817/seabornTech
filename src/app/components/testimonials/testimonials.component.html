@@ -1,0 +1,20 @@
+<main>
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    
+    <div class="main">
+        <div class="landing">
+            <h1>People are</h1>
+            <h2>Saying</h2>
+            <div class="cardHolder">
+                <div class="card" *ngFor="let item of data" >
+                    <i class="fas fa-quote-right"></i>
+                    <p>{{item.comment}}</p>
+                    <h6>{{item.name}}</h6>
+                    <img [src]="item.img" alt="profile"/>
+                    <div class="cbg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

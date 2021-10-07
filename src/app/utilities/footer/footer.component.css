@@ -1,0 +1,52 @@
+footer{background-color: rgb(61, 8, 61);width: 100%;padding: 2% 4% 0 4%;}
+p,h3{color: white;}
+.top{display: flex;width: 100%;position: relative;margin-bottom: 50px;justify-content: space-between;flex-wrap: wrap;}
+.top::after{content: "";bottom: -20px;left: 0; background-color: white; width: 100%;height: 1px;position: absolute;}
+
+.address img{width: 200px;margin-bottom: 30px;}
+
+.address{display: flex;flex-direction: column;justify-content:space-around;align-items: center;}
+.address div{display: flex;flex-direction: column;}
+.address div div{display: flex;flex-direction: row;}
+
+i{color: rgb(194, 158, 235);margin-right: 9px;padding-top: 3px;font-size: 15px;}
+
+.smlink{display: flex;flex-direction: column;align-items:center;justify-content: space-between;padding: 20px 0;flex-wrap: wrap;}
+.smlink i{font-size: 30px;display: flex;align-items: flex-end;cursor: pointer;}
+.smlink i p{font-size: 13px;margin-left: 5px;margin-top: 15px;margin-bottom: 0;}
+.smlink h4{color: rgb(194, 158, 235);}
+.training p{cursor: pointer;}
+
+.map{display: flex;align-items: center;justify-content: center;width: 50%;}
+.map iframe{width: 100%;height: 100%;}
+ 
+
+  .middle{display: flex;width: 100%;}
+  .middle .section{margin:  30px;}
+  .middle p{margin: 0px;}
+  .payments h4{color: white;margin-bottom: 10px;}
+  .plogo img{width: 80px;margin: 5px;}
+  .plogo{margin-bottom: 20px;}
+  form input{margin-right: 20px;; height: 50px;border-radius: 5px;}
+  form button{margin-top: 20px; background-color: red;color: white;border: none;border-radius: 5px;padding: 10px 20px;font-weight: 600;}
+  .qr{height: 150px;}
+
+ .bottom{width: 100%;margin-top: 30px;display: flex;justify-content: flex-end;flex-wrap: wrap;}
+ .bottom p{text-align: start;width: 100%;margin: 0px;}
+.links{display: flex;padding: 0 0 10px 0;flex-wrap: wrap;justify-content: center;}
+.links p{width: 150px;font-size: 15px;cursor: pointer;}
+.links p i{font-size: 25px;color: white;}
+
+
+@media (max-width: 960px){
+  .map{width: 100%;}
+  agm-map{height: 400px;width:100%px;}
+  .top{flex-wrap: wrap;justify-content: center;align-items: center;}
+  .address{align-items: center;}
+  .middle{flex-direction: column;}
+  .middle .section{margin: 10px 0;}
+  .smlink{flex-direction: row;width: 90%;}
+  
+  form{display: flex;flex-direction: column;align-items: center;}
+  .qr{height:auto;width:100%;display: flex;align-items: center;justify-content: center;}
+}
